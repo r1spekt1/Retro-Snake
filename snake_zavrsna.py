@@ -43,8 +43,8 @@ class Snake:
         self.body = [Vector2(6, 9), Vector2(5, 9), Vector2(4, 9)]       # Initial positions of the snake's body segments
         self.direction = Vector2(1, 0)      # Initial direction of the snake
         self.add_segment = False        # Flag to indicate if a new segment should be added
-        self.eat_sound = pygame.mixer.Sound("sounds/eat.mp3")       # Sound when the snake eats food
-        self.wall_hit_sound = pygame.mixer.Sound("sounds/wall.mp3")     # Sound when the snake hits a wall
+        self.eat_sound = pygame.mixer.Sound("eat.mp3")       # Sound when the snake eats food
+        self.wall_hit_sound = pygame.mixer.Sound("wall.mp3")     # Sound when the snake hits a wall
 
     def draw(self):
         for segment in self.body:       # Draw each segment of the snake
